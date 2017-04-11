@@ -1,0 +1,130 @@
+
+
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Keisha S Perkins/title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Pacifico|Quicksand");
+      body {
+        background: #eee;
+        background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/847224/bg2.png");
+        text-align: center;
+        overflow: hidden;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      .main-message {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        background: white;
+        background: rgba(255, 255, 255, 0.8);
+        width: 80%;
+        max-width: 600px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+
+      .greeting {
+        font-family: "Pacifico", cursive;
+        font-size: 3rem;
+        margin: 15px;
+      }
+
+      .small {
+        margin: 15px;
+        font-size: 1.5rem;
+      }
+
+      .big {
+        margin: 15px;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+      }
+
+      .contact-link-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        list-style: none;
+        width: 90%;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        padding: 0;
+      }
+      .contact-link-list .icon {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        stroke-width: 0;
+        stroke: black;
+        fill: black;
+      }
+
+      .main-footer {
+        background: white;
+        background: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+      }
+    </style>
+</head>
+
+<body translate="no" >
+
+  <div class="main-message">
+  <h1 class="greeting">Hello!</h1>
+  <p class="small">Keisha's website is</p>
+  <p class="big">coming soon!</p>
+  <ul class="contact-link-list">
+    <li class="contact-link-item"><svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg>Email Me</li>
+    <li class="contact-link-item"><svg class="icon icon-codepen"><use xlink:href="#icon-codepen"></use></svg> CodePen</li>
+    <li class="contact-link-item"><svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg> Github</li>
+    <li class="contact-link-item"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg> Twitter</li>
+    <li class="contact-link-item"><svg class="icon icon-linkedin2"><use xlink:href="#icon-linkedin2"></use></svg> Linkedin</li>
+  </ul>
+</div>
+<footer class="main-footer">Copyright &copy; 2017 Keisha S Perkins, all rights reserved.</footer>
+
+<div class="svg-defs">
+  <defs>
+    <symbol id="icon-twitter" viewBox="0 0 26 28">
+      <title>twitter</title>
+      <path d="M25.312 6.375c-0.688 1-1.547 1.891-2.531 2.609 0.016 0.219 0.016 0.438 0.016 0.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-0.828-7.75-2.266 0.406 0.047 0.797 0.063 1.219 0.063 2.359 0 4.531-0.797 6.266-2.156-2.219-0.047-4.078-1.5-4.719-3.5 0.313 0.047 0.625 0.078 0.953 0.078 0.453 0 0.906-0.063 1.328-0.172-2.312-0.469-4.047-2.5-4.047-4.953v-0.063c0.672 0.375 1.453 0.609 2.281 0.641-1.359-0.906-2.25-2.453-2.25-4.203 0-0.938 0.25-1.797 0.688-2.547 2.484 3.062 6.219 5.063 10.406 5.281-0.078-0.375-0.125-0.766-0.125-1.156 0-2.781 2.25-5.047 5.047-5.047 1.453 0 2.766 0.609 3.687 1.594 1.141-0.219 2.234-0.641 3.203-1.219-0.375 1.172-1.172 2.156-2.219 2.781 1.016-0.109 2-0.391 2.906-0.781z"></path>
+    </symbol>
+    <symbol id="icon-github" viewBox="0 0 24 28">
+      <title>github</title>
+      <path d="M12 2c6.625 0 12 5.375 12 12 0 5.297-3.437 9.797-8.203 11.391-0.609 0.109-0.828-0.266-0.828-0.578 0-0.391 0.016-1.687 0.016-3.297 0-1.125-0.375-1.844-0.812-2.219 2.672-0.297 5.484-1.313 5.484-5.922 0-1.313-0.469-2.375-1.234-3.219 0.125-0.313 0.531-1.531-0.125-3.187-1-0.313-3.297 1.234-3.297 1.234-0.953-0.266-1.984-0.406-3-0.406s-2.047 0.141-3 0.406c0 0-2.297-1.547-3.297-1.234-0.656 1.656-0.25 2.875-0.125 3.187-0.766 0.844-1.234 1.906-1.234 3.219 0 4.594 2.797 5.625 5.469 5.922-0.344 0.313-0.656 0.844-0.766 1.609-0.688 0.313-2.438 0.844-3.484-1-0.656-1.141-1.844-1.234-1.844-1.234-1.172-0.016-0.078 0.734-0.078 0.734 0.781 0.359 1.328 1.75 1.328 1.75 0.703 2.141 4.047 1.422 4.047 1.422 0 1 0.016 1.937 0.016 2.234 0 0.313-0.219 0.688-0.828 0.578-4.766-1.594-8.203-6.094-8.203-11.391 0-6.625 5.375-12 12-12zM4.547 19.234c0.031-0.063-0.016-0.141-0.109-0.187-0.094-0.031-0.172-0.016-0.203 0.031-0.031 0.063 0.016 0.141 0.109 0.187 0.078 0.047 0.172 0.031 0.203-0.031zM5.031 19.766c0.063-0.047 0.047-0.156-0.031-0.25-0.078-0.078-0.187-0.109-0.25-0.047-0.063 0.047-0.047 0.156 0.031 0.25 0.078 0.078 0.187 0.109 0.25 0.047zM5.5 20.469c0.078-0.063 0.078-0.187 0-0.297-0.063-0.109-0.187-0.156-0.266-0.094-0.078 0.047-0.078 0.172 0 0.281s0.203 0.156 0.266 0.109zM6.156 21.125c0.063-0.063 0.031-0.203-0.063-0.297-0.109-0.109-0.25-0.125-0.313-0.047-0.078 0.063-0.047 0.203 0.063 0.297 0.109 0.109 0.25 0.125 0.313 0.047zM7.047 21.516c0.031-0.094-0.063-0.203-0.203-0.25-0.125-0.031-0.266 0.016-0.297 0.109s0.063 0.203 0.203 0.234c0.125 0.047 0.266 0 0.297-0.094zM8.031 21.594c0-0.109-0.125-0.187-0.266-0.172-0.141 0-0.25 0.078-0.25 0.172 0 0.109 0.109 0.187 0.266 0.172 0.141 0 0.25-0.078 0.25-0.172zM8.937 21.438c-0.016-0.094-0.141-0.156-0.281-0.141-0.141 0.031-0.234 0.125-0.219 0.234 0.016 0.094 0.141 0.156 0.281 0.125s0.234-0.125 0.219-0.219z"></path>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 32 32">
+      <title>mail</title>
+      <path d="M28 5h-24c-2.209 0-4 1.792-4 4v13c0 2.209 1.791 4 4 4h24c2.209 0 4-1.791 4-4v-13c0-2.208-1.791-4-4-4zM2 10.25l6.999 5.25-6.999 5.25v-10.5zM30 22c0 1.104-0.898 2-2 2h-24c-1.103 0-2-0.896-2-2l7.832-5.875 4.368 3.277c0.533 0.398 1.166 0.6 1.8 0.6 0.633 0 1.266-0.201 1.799-0.6l4.369-3.277 7.832 5.875zM30 20.75l-7-5.25 7-5.25v10.5zM17.199 18.602c-0.349 0.262-0.763 0.4-1.199 0.4s-0.851-0.139-1.2-0.4l-12.8-9.602c0-1.103 0.897-2 2-2h24c1.102 0 2 0.897 2 2l-12.801 9.602z"></path>
+    </symbol>
+    <symbol id="icon-linkedin2" viewBox="0 0 32 32">
+      <title>linkedin2</title>
+      <path d="M12 12h5.535v2.837h0.079c0.77-1.381 2.655-2.837 5.464-2.837 5.842 0 6.922 3.637 6.922 8.367v9.633h-5.769v-8.54c0-2.037-0.042-4.657-3.001-4.657-3.005 0-3.463 2.218-3.463 4.509v8.688h-5.767v-18z"></path>
+      <path d="M2 12h6v18h-6v-18z"></path>
+      <path d="M8 7c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
+    </symbol>
+  </defs>
+</div>
+  
+  
+  
+  
+  
+
+</body>
+</html>
+ 
