@@ -1,0 +1,153 @@
+$darkblue: #052d3d
+$hotpink: #f10e78
+
+body 
+  background: white
+  // overflow: hidden
+a
+  text-decoration: none
+  color: darken($hotpink, 5%)
+  &:hover
+    color: $hotpink
+    text-decoration: none
+.reverse
+  direction: rtl  
+  unicode-bidi: bidi-override
+#main-landing
+  width: 100vw
+  height: 100Vh
+  overflow: hidden
+  background: url('http://pipsum.com/1500x1500.jpg') no-repeat
+.svg-definitions
+  display: none
+.project
+  display: flex
+  background: white
+  margin: 0
+  .project-cover
+    flex-basis: 50%
+    overflow: hidden
+    .project-cover-image
+      width: 101%
+      height: 101%
+  .project-description
+    flex-basis: 50%
+    padding: 30px
+  &:nth-child(even)
+    .project-description
+      order: -1
+
+//Resume Page  
+body.resume
+  background: blue
+  background: url('/img/bg2.png') repeat
+.resume-wrapper
+  width: 90%
+  max-width: 1000px
+  margin: 20px auto
+  background: #eee  
+  display: flex
+  justify-content: center
+  flex-flow: column wrap
+  align-items: center
+  box-shadow: 5px 5px 10px #aaa
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3)
+  background: url('../img/bg.png')
+  .your-name
+    color: $hotpink
+    text-align: center
+  .icon 
+    display: inline-block
+    width: 1em
+    height: 1em
+    stroke-width: 0
+    stroke: currentColor
+    fill: currentColor
+  .contact-info-list
+    display: flex
+    list-style: none
+    width: 100
+    justify-content: center
+    flex-flow: row wrap
+    align-items: center
+    margin: 0
+    padding: 0
+    .contact-info-list-item
+      margin: 3px 5px
+      display: flex
+      flex-flow: row nowrap
+      align-items: center
+      justify-content: center
+      .email
+        cursor: pointer
+        &:hover
+          color: $hotpink
+      a
+        text-decoration: none
+        color: black
+        &:hover
+          color: $hotpink
+      
+      svg
+        margin-right: 2px
+  section
+    padding: 20px 40px
+  .skills
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-flow: column wrap
+
+  .section-header
+    text-align: center
+    margin: 20px
+  .skills-icon-group 
+    display: inline-flex
+    list-style: none
+    justify-content: space-around
+    width: 90%
+    max-width: 800px
+    padding: 0
+    margin: 0
+    .skills-icon-item
+      margin: 0 5px
+      svg
+        width: 100%
+        max-width: 100px
+        height: auto
+  .job-title-wrapper
+    width: 80%
+    .job-title
+      color: $hotpink
+      font-size: 1.8rem
+      .job-location
+        color: black
+        font-size: 1.5rem
+  .job-duration
+    font-style: italic
+    color: #888
+    text-align: right
+  .job-description-wrapper
+    .job-description
+     
+.alert.email-copy
+  background: #111
+  background: rgba(0,0,0,.9)
+  border-radius: 0
+  color: white
+  width: 50%
+  margin: 5px auto 0 auto
+  display: none
+  position: absolute
+  left: 50%
+  transform: translate(-50%,0)
+  text-align: center
+
+//Footer
+.main-footer
+  background: white
+  background: rgba(255,255,255,.8)
+  width: 100%
+  text-align: center
+  padding: 5px

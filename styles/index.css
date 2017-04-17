@@ -1,0 +1,228 @@
+body {
+  background: white;
+}
+
+a {
+  text-decoration: none;
+  color: #d90d6c;
+}
+
+a:hover {
+  color: #f10e78;
+  text-decoration: none;
+}
+
+.reverse {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+#main-landing {
+  width: 100vw;
+  height: 100Vh;
+  overflow: hidden;
+  background: url("http://pipsum.com/1500x1500.jpg") no-repeat;
+}
+
+.svg-definitions {
+  display: none;
+}
+
+.project {
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  margin: 0;
+}
+
+.project .project-cover {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  overflow: hidden;
+}
+
+.project .project-cover .project-cover-image {
+  width: 101%;
+  height: 101%;
+}
+
+.project .project-description {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  padding: 30px;
+}
+
+.project:nth-child(even) .project-description {
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+body.resume {
+  background: blue;
+  background: url("../img/bg.png") repeat;
+}
+
+.resume-wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #eee;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  box-shadow: 5px 5px 10px #aaa;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/groovepaper.png");
+}
+
+.resume-wrapper .your-name {
+  color: #f10e78;
+  text-align: center;
+}
+
+.resume-wrapper .icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.resume-wrapper .contact-info-list {
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  width: 100;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-wrapper .contact-info-list .contact-info-list-item {
+  margin: 3px 5px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.resume-wrapper .contact-info-list .contact-info-list-item .email {
+  cursor: pointer;
+}
+
+.resume-wrapper .contact-info-list .contact-info-list-item .email:hover {
+  color: #f10e78;
+}
+
+.resume-wrapper .contact-info-list .contact-info-list-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.resume-wrapper .contact-info-list .contact-info-list-item a:hover {
+  color: #f10e78;
+}
+
+.resume-wrapper .contact-info-list .contact-info-list-item svg {
+  margin-right: 2px;
+}
+
+.resume-wrapper section {
+  padding: 20px 40px;
+}
+
+.resume-wrapper .skills {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+}
+
+.resume-wrapper .section-header {
+  text-align: center;
+  margin: 20px;
+}
+
+.resume-wrapper .skills-icon-group {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 90%;
+  max-width: 800px;
+  padding: 0;
+  margin: 0;
+}
+
+.resume-wrapper .skills-icon-group .skills-icon-item {
+  margin: 0 5px;
+}
+
+.resume-wrapper .skills-icon-group .skills-icon-item svg {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+
+.resume-wrapper .job-title-wrapper {
+  width: 80%;
+}
+
+.resume-wrapper .job-title-wrapper .job-title {
+  color: #f10e78;
+  font-size: 1.8rem;
+}
+
+.resume-wrapper .job-title-wrapper .job-title .job-location {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.resume-wrapper .job-duration {
+  font-style: italic;
+  color: #888;
+  text-align: right;
+}
+
+.alert.email-copy {
+  background: #111;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 0;
+  color: white;
+  width: 50%;
+  margin: 5px auto 0 auto;
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+
+.main-footer {
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
