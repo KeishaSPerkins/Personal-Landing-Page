@@ -1,290 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-  <!--  Meta  -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Resume for Keisha S Perkins, Front-End Developer">
-  <meta name="author" content="Keisha S Perkins">
-  <title>Resume | Keisha S Perkins</title>
-  
-
-  <!--  Styles  -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles/index.css">
-
-  
-
-  
-</head>
-
-<body class='resume'>
-  <div class="alert email-copy" role="alert">
-    <strong>Copied!</strong> Keisha's email address has been copied to your clipboard!
-  </div>
-  <div class="resume-wrapper">
-    <section class="indentity">
-      <h1 class="your-name">Keisha S Perkins</h1>
-      <ul class="contact-info-list">
-        <li class="contact-info-list-item">
-          <svg class="icon icon-mail-envelope-closed"><use xlink:href="#icon-mail-envelope-closed"></use></svg><span class='email copyable reverse' data-clipboard-text="ksp@keishasperkins.com"> moc.snikrepsahsiek@psk</span>
-        </li>
-        <li class="contact-info-list-item">
-          <svg class="icon icon-sphere"><use xlink:href="#icon-sphere"> </use></svg><a target="_blank" href="http://keishasperkins.com">keishasperkins.com</a>
-        </li>
-        <li class="contact-info-list-item">
-          <svg class="icon icon-codepen"><use xlink:href="#icon-codepen"></use></svg> <a target="_blank" href="http://codepen.io/keishasperkins">codepen.io/keishasperkins</a>
-        </li>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>CodePen - KeishaSPerkins.com Coming Soon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Pacifico|Quicksand");
+      body {
+      background: #eee;
+      background: url("img/bg.png");
+      text-align: center;
+      overflow: hidden;
+      font-family: "Quicksand", sans-serif;
+      }
+      .main-message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      background: white;
+      background: rgba(255, 255, 255, 0.9);
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      }
+      .greeting {
+      font-family: "Pacifico", cursive;
+      font-size: 3rem;
+      margin: 15px;
+      }
+      .small {
+      margin: 15px;
+      font-size: 1.5rem;
+      }
+      .big {
+      margin: 15px;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      }
+      .contact-link-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      list-style: none;
+      width: 90%;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      padding: 0;
+      margin: auto;
+      }
+      .contact-link-list .contact-link-item {
+      margin: 3px 0;
+      }
+      .contact-link-list .contact-link-item a {
+      text-decoration: none;
+      color: hotpink;
+      }
+      .contact-link-list .contact-link-item a:hover {
+      color: #ff369b;
+      text-decoration: underline;
+      }
+      .contact-link-list .email {
+      cursor: pointer;
+      color: hotpink;
+      }
+      .contact-link-list .email:hover {
+      color: #ff369b;
+      text-decoration: underline;
+      }
+      .main-footer {
+      background: white;
+      background: rgba(255, 255, 255, 0.8);
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      padding: 5px;
+      }
+      .email-copy {
+      background: #111;
+      background: rgba(10, 10, 10, 0.6);
+      border: 1px solid #333;
+      width: 90%;
+      max-width: 650px;
+      padding: 15px;
+      border-radius: 8px;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+      z-index: 10;
+      color: white;
+      }
+      @media screen and (max-width: 600px) {
+      .contact-link-list {
+      -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+      }
+      }
+    </style>
+  </head>
+  <body translate="no" >
+    <div class="alert email-copy" role="alert">
+      <strong>Copied!</strong> Keisha's email address has been copied to your clipboard!
+    </div>
+    <div class="main-message">
+      <h1 class="greeting">Hello!</h1>
+      <p class="small">Keisha's website is</p>
+      <p class="big">coming soon!</p>
+      <ul class="contact-link-list">
+        <li class="contact-link-item email">Email Me</li>
+        <li class="contact-link-item"><a target="_blank" href="./resume.html">Resum&eacute;</a></li>
+        <li class="contact-link-item"><a href="http://codepen.io/keishasperkins">CodePen</a></li>
+        <li class="contact-link-item"><a href="http://github.com/keishasperkins">Github</a></li>
+        <li class="contact-link-item"><a href="http://twitter.com/keishasperkins">Twitter</a></li>
+        <li class="contact-link-item"><a href="http://linkedin.com/in/keishasperkins">Linkedin</a></li>
       </ul>
-    </section>
-    <section class="skills">
-      <h2 class="section-header">Skills</h2>
-      <ul class="skills-icon-group">
-        <li class="skills-icon-item">
-          <svg>
-          <use xlink:href="#html"></use>
-        </svg>
-        </li>
-        <li class="skills-icon-item">
-          <svg>
-          <use xlink:href="#css"></use>
-        </svg>
-        </li>
-        <li class="skills-icon-item">
-          <svg>
-          <use xlink:href="#javascript"></use>
-        </svg>
-        </li>
-        <li class="skills-icon-item">
-          <svg>
-          <use xlink:href="#photoshop"></use>
-        </svg>
-        </li>
-        <li class="skills-icon-item">
-          <svg>
-          <use xlink:href="#illustrator"></use>
-        </svg>
-        </li>
-      </ul>
-    </section>
-    <section class="experience">
-      <h2 class="section-header">Experience</h2>
-    <table class="job-history-group">
-      <tr>
-        <td class='job-title-wrapper'>
-          <h3 class="job-title">Library Technician<span class='job-location'> @ East Baton Rouge Parish Library</span></h3>
-        </td>
-        <td class="job-duration-wrapper">
-          <p class="job-duration">2011 to Present</p>
-        </td>
-      </tr>
-      <tr>
-        <td class="job-description-wrapper" colspan="2">
-          <p class="job-description">The library has afforded me exposure to so many people, ideas, and expereices that have sharpened me professionally. From customer service and decision making skills, to porblem solving and system creation, the library is a great place to grow.</p>
-        </td>
-      </tr>
-      <tr>
-        <td class='job-title-wrapper'>
-          <h3 class="job-title">Freelance Designer</h3>
-        </td>
-        <td class="job-duration-wrapper">
-          <p class="job-duration">2012 to Present</p>
-        </td>
-      </tr>
-      <tr>
-        <td class="job-description-wrapper" colspan="2">
-          <p class="job-description">Freelancing has been a great way for me to hone my eye. Learning what works and doesn’t work through trial and error is a great teacher. Providing solutions for clients has increased my ability to communicate effectively about goals and expectations while gaining insight into the clients’ needs. And with new skills in HTML, CSS, and JavaScript I can be of even greater service to my clients.</p>
-        </td>
-      </tr>
-      <tr>
-        <td class='job-title-wrapper'>
-           <h3 class="job-title">Coding Instructor<span class='job-location'> @ The Futures Fund</span></h3>
-        </td>
-        <td class="job-duration-wrapper">
-          <p class="job-duration">2017</p>
-        </td>
-      </tr>
-      <tr>
-        <td class="job-description-wrapper" colspan="2">
-          <p class="job-description"><a target="_blank" href="http://www.thefuturesfund.org/">The Futures Fund</a> is a workforce development program designed with the mission to create digital, literary, visual, and performing arts-based entrepreneurial opportunities for middle to high school aged youth. I've been able to work as a coding instructor for the program's Digital Arts program. Equiping youth with tools for industry is always a rewarding endeavor, and I'm greatful to The Futures Fund for the chance to pour into the community. </p>
-        </td>
-      </tr>
-      <tr>
-        <td class='job-title-wrapper'>
-          <h3 class="job-title">Resident Assistant <span class='job-location'> @ Louisiana State University</span></h3>
-        </td>
-        <td class="job-duration-wrapper">
-          <p class="job-duration">2008 to 2010</p>
-        </td>
-      </tr>
-      <tr>
-        <td class="job-description-wrapper" colspan="2">
-          <p class="job-description">Being a Resident Assistant (RA) demands a level of dependability that most student jobs don’t require. Between work, school and other obligations, a position in Residence Life teaches teamwork, resourcefulness, dependability, and balance. Few student positions ask employees to be available around-the-clock for emergencies or other sudden occurrences, and as an RA on a floor of 90 in a building of more than 500, things definitely occur suddenly.</p>
-        </td>
-      </tr>
-    </table>
-    <h2 class="section-header">Volunteering</h2>
-    <table class="job-history-group">
-      <tr>
-        <td class='job-title-wrapper'>
-          <h3 class="job-title">LaWIT</h3>
-        </td>
-        <td class="job-duration-wrapper">
-          <p class="job-duration">2016 to Present</p>
-        </td>
-      </tr>
-      <tr>
-        <td class="job-description-wrapper" colspan="2">
-          <p class="job-description"><a target="_blank" href="http://www.la-wit.org/">Louisiana Women in Technology (LaWIT)</a> is an organization comprised of women dedicated to the fields of Technology, Engineering, and Science. I've had the fortune to volunteer with LaWIT's annual Rails Girls as a workshop coach. I was also able to work with the annual IT Girls workshop as instructor for the advanced class, creating and teaching a <a target="_blank" href="https://la-wit.github.io/build-an-infinite-runner/">lesson on JavaScript</a> to middle school girls. Each time I work with LaWIT, it is a wonderful opportuntity.</p>
-        </td>
-      </tr>
-    </table>
-    </section>
-    <section class="education">
-      <h2 class="section-header">Education</h2>
-      <table class="job-history-group">
-        <tr>
-          <td class='job-title-wrapper'>
-            <h3 class="job-title">Bachelor of Arts<span class='job-location'> @ Louisiana State Univeristy</span></h3>
-          </td>
-          <td class="job-duration-wrapper">
-            <p class="job-duration">2011</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="job-description-wrapper" colspan="2">
-            <h4 class='degree-type'>Communication Studies</h4>
-            <p class="job-description">Studying Communication has been integral to my design style. Knowing how we communicate, why we communicate, and what tools we use to communicate is great when designing, for what is design if not communication? </p>
-          </td>
-        </tr>
-      </table>
-    </section>
-  </div>
-
-
-  <!--   SVG Defs -->
-  <div class="svg-definitions">
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-<defs>
-    <symbol id="html" viewBox="0 0 100 100">
-      <path fill="#E44F26" d="M94,0H6C2.69,0,0,2.69,0,6v88c0,3.31,2.69,6,6,6h88c3.31,0,6-2.69,6-6V6
-	C100,2.69,97.31,0,94,0z M77.29,21.8l-0.5,5.58l-0.22,2.47h-42.1l1,11.27h30.1L75.3,44.07l-2.59,28.97l-0.16,1.85l-22.52,6.24v0.01
-	l-0.05,0.011L27.45,74.89L25.9,57.62h11.05l0.78,8.77L49.98,69.7H50l12.27-3.311l1.271-14.27H25.41l-2.7-30.32l-0.26-2.95h55.1
-	L77.29,21.8z"/>
-    </symbol>
-  <symbol id="css" viewbox="0 0 100 100">
-    <path fill="#435BA9" d="M94,0H6C2.69,0,0,2.69,0,6v88c0,3.31,2.69,6,6,6h88c3.31,0,6-2.69,6-6V6
-	C100,2.69,97.31,0,94,0z M75.57,41.12L75.3,44.07l-2.59,28.97l-0.16,1.85l-22.52,6.25l-0.05,0.011L27.45,74.89L25.9,57.62h11.05
-	l0.78,8.77L49.99,69.7H50l12.27-3.311l1.271-14.27H25.41l-0.98-11H64.5l1-11.27H23.45l-1-11H77.56L75.57,41.12z"/>
-  </symbol>
-  <symbol id="javascript" viewbox="0 0 100 100">
-    <path fill="#EEC723" d="M94,0H6C2.69,0,0,2.69,0,6v88c0,3.31,2.69,6,6,6h88c3.31,0,6-2.69,6-6V6
-	C100,2.69,97.31,0,94,0z M59.93,75.53c0,5.81-1.43,10.33-4.3,13.55c-2.87,3.229-6.7,4.84-11.49,4.84c-2.23,0-4.07-0.27-5.5-0.79
-	v-7.66c1.3,0.891,2.97,1.34,5.02,1.34c5.43,0,8.14-4.189,8.14-12.579V44.08h8.13V75.53z M92.13,88.07
-	c-0.82,1.319-1.91,2.42-3.28,3.279c-1.369,0.87-2.949,1.511-4.729,1.94c-1.79,0.42-3.68,0.63-5.66,0.63c-3.83,0-7.15-0.64-9.95-1.92
-	v-7.35c2.96,2.26,6.23,3.39,9.811,3.39c4.79,0,7.18-1.41,7.18-4.24c0-0.8-0.21-1.47-0.62-2.03c-0.41-0.56-0.96-1.06-1.649-1.489
-	c-0.7-0.431-1.521-0.82-2.461-1.16c-0.949-0.34-2-0.73-3.17-1.16c-1.43-0.57-2.72-1.18-3.88-1.82c-1.149-0.63-2.1-1.359-2.87-2.17
-	c-0.76-0.8-1.34-1.72-1.72-2.75c-0.39-1.02-0.58-2.22-0.58-3.59c0-1.68,0.4-3.17,1.19-4.46c0.8-1.29,1.87-2.37,3.22-3.24
-	c1.34-0.88,2.87-1.54,4.58-1.989c1.7-0.44,3.47-0.66,5.29-0.66c3.24,0,6.13,0.489,8.689,1.47v6.93c-2.47-1.68-5.289-2.52-8.479-2.52
-	c-1,0-1.91,0.1-2.72,0.3c-0.811,0.21-1.5,0.49-2.07,0.86c-0.57,0.359-1.01,0.8-1.33,1.31c-0.32,0.521-0.479,1.08-0.479,1.7
-	c0,0.75,0.159,1.39,0.479,1.91c0.32,0.52,0.79,0.99,1.42,1.38c0.62,0.399,1.38,0.77,2.25,1.1c0.88,0.33,1.891,0.69,3.03,1.07
-	c1.5,0.62,2.85,1.25,4.05,1.88c1.2,0.64,2.22,1.37,3.061,2.17c0.84,0.811,1.489,1.75,1.949,2.811c0.45,1.06,0.681,2.319,0.681,3.77
-	C93.36,85.2,92.95,86.75,92.13,88.07z"/>
-  </symbol>
-  <symbol id="photoshop" viewbox="0 0 100 100">
-    <g>
-	<path display="inline" fill="#201A56" d="M42.72,40.43c0,2.94-0.91,5.22-2.73,6.84c-1.83,1.61-4.48,2.42-7.97,2.42h-5.26V31.78
-		h5.91C39.37,31.78,42.72,34.67,42.72,40.43z"/>
-	<path display="inline" fill="#201A56" d="M94,0H6C2.69,0,0,2.69,0,6v88c0,3.31,2.69,6,6,6h88c3.31,0,6-2.69,6-6V6
-		C100,2.69,97.31,0,94,0z M46.41,51.78c-3.23,3.029-7.61,4.54-13.12,4.54h-6.53V74.1h-8.1V25.08h14.87c5.62,0,9.99,1.31,13.09,3.93
-		c3.09,2.62,4.64,6.32,4.64,11.08C51.26,44.85,49.65,48.75,46.41,51.78z M80.11,69.07c-0.82,1.319-1.91,2.42-3.28,3.279
-		c-1.37,0.87-2.94,1.511-4.73,1.94c-1.79,0.42-3.68,0.63-5.659,0.63c-3.83,0-7.141-0.64-9.95-1.92v-7.35
-		c2.97,2.26,6.24,3.39,9.81,3.39c4.79,0,7.181-1.41,7.181-4.24c0-0.8-0.2-1.47-0.61-2.03c-0.41-0.56-0.97-1.06-1.66-1.489
-		c-0.7-0.431-1.52-0.82-2.46-1.16c-0.95-0.34-2-0.73-3.16-1.16c-1.439-0.57-2.729-1.18-3.88-1.82c-1.15-0.63-2.11-1.359-2.87-2.17
-		c-0.77-0.8-1.34-1.72-1.729-2.75c-0.391-1.02-0.58-2.22-0.58-3.59c0-1.68,0.399-3.17,1.189-4.46c0.8-1.28,1.87-2.37,3.221-3.24
-		c1.34-0.88,2.869-1.54,4.579-1.99c1.711-0.44,3.471-0.66,5.301-0.66c3.229,0,6.13,0.49,8.68,1.47v6.94
-		c-2.46-1.69-5.29-2.53-8.48-2.53c-1,0-1.909,0.1-2.72,0.3c-0.81,0.21-1.5,0.49-2.06,0.86c-0.57,0.36-1.021,0.8-1.34,1.31
-		c-0.32,0.52-0.48,1.08-0.48,1.7c0,0.75,0.16,1.39,0.48,1.91c0.319,0.52,0.79,0.99,1.42,1.38c0.63,0.399,1.38,0.77,2.26,1.1
-		c0.87,0.33,1.88,0.69,3.02,1.07c1.511,0.62,2.86,1.25,4.051,1.88c1.199,0.64,2.22,1.37,3.06,2.17c0.84,0.811,1.49,1.75,1.95,2.811
-		c0.46,1.06,0.68,2.319,0.68,3.77C81.34,66.2,80.93,67.75,80.11,69.07z"/>
-</g>
-  </symbol>
-  <symbol id="illustrator" viewbox="0 0 100 100">
-    <g>
-	<path display="inline" fill="#E07E29" d="M41.25,37.03l6.8,19.55h-15l6.73-19.55c0.25-0.75,0.48-1.78,0.68-3.08h0.14
-		C40.83,35.37,41.04,36.39,41.25,37.03z"/>
-	<path display="inline" fill="#E07E29" d="M94,0H6C2.69,0,0,2.69,0,6v88c0,3.31,2.69,6,6,6h88c3.31,0,6-2.69,6-6V6
-		C100,2.69,97.31,0,94,0z M54.61,75.69l-4.4-12.48H30.93l-4.24,12.48H17.8L36.16,26.67h9.16L63.54,75.69H54.61z M77.31,75.69h-7.93
-		v-35h7.93V75.69z M76.8,32.02c-0.939,0.88-2.08,1.32-3.42,1.32c-1.3,0-2.41-0.42-3.33-1.27c-0.93-0.84-1.39-1.91-1.39-3.21
-		c0-1.3,0.46-2.38,1.39-3.25c0.92-0.86,2.03-1.3,3.33-1.3c1.34,0,2.48,0.44,3.42,1.3c0.931,0.87,1.4,1.95,1.4,3.25
-		C78.2,30.09,77.73,31.14,76.8,32.02z"/>
-</g>
-  </symbol>
-
-
-
-
-    </defs>
-</svg>
-
-    <svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs>
-      <symbol id="icon-codepen" viewBox="0 0 32 32">
-<title>codepen</title>
-<path d="M29.555 11.501l-14-9.333c-0.336-0.224-0.774-0.224-1.109 0l-14 9.333c-0.278 0.185-0.445 0.498-0.445 0.832v9.333c0 0.334 0.167 0.647 0.445 0.832l14 9.333c0.168 0.112 0.361 0.168 0.555 0.168s0.387-0.056 0.555-0.168l14-9.333c0.278-0.185 0.445-0.498 0.445-0.832v-9.333c0-0.334-0.167-0.647-0.445-0.832zM15 20.465l-5.197-3.465 5.197-3.465 5.197 3.465-5.197 3.465zM16 11.798v-6.93l11.197 7.465-5.197 3.465-6-4zM14 11.798l-6 4-5.197-3.465 11.197-7.465v6.93zM6.197 17l-4.197 2.798v-5.596l4.197 2.798zM8 18.202l6 4v6.93l-11.197-7.465 5.197-3.465zM16 22.202l6-4 5.197 3.465-11.197 7.465v-6.93zM23.803 17l4.197-2.798v5.596l-4.197-2.798z"></path>
-</symbol>
-      <symbol id="icon-sphere" viewBox="0 0 32 32">
-        <title>sphere</title>
-        <path d="M15 2c-8.284 0-15 6.716-15 15s6.716 15 15 15c8.284 0 15-6.716 15-15s-6.716-15-15-15zM23.487 22c0.268-1.264 0.437-2.606 0.492-4h3.983c-0.104 1.381-0.426 2.722-0.959 4h-3.516zM6.513 12c-0.268 1.264-0.437 2.606-0.492 4h-3.983c0.104-1.381 0.426-2.722 0.959-4h3.516zM21.439 12c0.3 1.28 0.481 2.62 0.54 4h-5.979v-4h5.439zM16 10v-5.854c0.456 0.133 0.908 0.355 1.351 0.668 0.831 0.586 1.625 1.488 2.298 2.609 0.465 0.775 0.867 1.638 1.203 2.578h-4.852zM10.351 7.422c0.673-1.121 1.467-2.023 2.298-2.609 0.443-0.313 0.895-0.535 1.351-0.668v5.854h-4.852c0.336-0.94 0.738-1.803 1.203-2.578zM14 12v4h-5.979c0.059-1.38 0.24-2.72 0.54-4h5.439zM2.997 22c-0.533-1.278-0.854-2.619-0.959-4h3.983c0.055 1.394 0.224 2.736 0.492 4h-3.516zM8.021 18h5.979v4h-5.439c-0.3-1.28-0.481-2.62-0.54-4zM14 24v5.854c-0.456-0.133-0.908-0.355-1.351-0.668-0.831-0.586-1.625-1.488-2.298-2.609-0.465-0.775-0.867-1.638-1.203-2.578h3.852zM19.649 26.578c-0.673 1.121-1.467 2.023-2.298 2.609-0.443 0.312-0.895 0.535-1.351 0.668v-5.854h3.852c-0.336 0.94-0.738 1.802-1.203 2.578zM16 22v-4h5.979c-0.059 1.38-0.24 2.72-0.54 4h-5.439zM23.98 16c-0.055-1.394-0.224-2.736-0.492-4h3.516c0.533 1.278 0.855 2.619 0.959 4h-3.983zM25.958 10h-2.997c-0.582-1.836-1.387-3.447-2.354-4.732 1.329 0.636 2.533 1.488 3.585 2.54 0.671 0.671 1.261 1.404 1.766 2.192zM5.808 7.808c1.052-1.052 2.256-1.904 3.585-2.54-0.967 1.285-1.771 2.896-2.354 4.732h-2.997c0.504-0.788 1.094-1.521 1.766-2.192zM4.042 24h2.997c0.583 1.836 1.387 3.447 2.354 4.732-1.329-0.636-2.533-1.488-3.585-2.54-0.671-0.671-1.261-1.404-1.766-2.192zM24.192 26.192c-1.052 1.052-2.256 1.904-3.585 2.54 0.967-1.285 1.771-2.896 2.354-4.732h2.997c-0.504 0.788-1.094 1.521-1.766 2.192z"></path>
-      </symbol>
-      <symbol id="icon-mail-envelope-closed" viewBox="0 0 32 32">
-        <title>mail-envelope-closed</title>
-        <path d="M5.315 9.274l7.735 6.726-7.737 6.728c-0.194-0.184-0.313-0.445-0.313-0.735v-11.986c0-0.289 0.121-0.549 0.315-0.733zM27.687 9.272c0.194 0.184 0.313 0.445 0.313 0.735v11.986c0 0.289-0.121 0.549-0.315 0.733l-7.735-6.726 7.737-6.728zM19.202 16.651l7.298 6.349h-20l7.298-6.349 2.702 2.349 2.702-2.349zM6.004 8c-1.107 0-2.004 0.895-2.004 1.994v12.012c0 1.101 0.89 1.994 2.004 1.994h20.993c1.107 0 2.004-0.895 2.004-1.994v-12.012c0-1.101-0.89-1.994-2.004-1.994h-20.993zM16.5 17.7l-10-8.7h20l-10 8.7z"></path>
-      </symbol>
-    </defs>
-  </svg>
-    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="325px" height="450px" viewBox="0 0 325 450" enable-background="new 0 0 325 450" xml:space="preserve">
-<defs>
-    <symbol id="js">
-  <g>
-	<polygon fill="#EFC725" points="40.845,401.254 13.775,97.632 311.225,97.632 284.127,401.205 162.318,434.975 	"/>
-	<polygon fill="#FBDE34" points="162.25,408.787 260.678,381.5 283.836,122.083 162.25,122.083 	"/>
-	<polygon fill="#EBEBEB" points="162.193,331.426 162.031,331.473 120.559,320.272 117.906,290.575 97.756,290.575 80.527,290.575 
-		85.744,349.043 162.021,370.219 162.193,370.17 	"/>
-	<polygon fill="#EBEBEB" points="167.209,271.937 167.209,234.7 121.355,234.7 126.732,176.258 167.312,175.177 167.209,136.454 
-		93.065,136.454 90.311,163.903 81.559,261.938 80.651,271.937 90.686,271.937 	"/>
-	<polygon fill="#FFFFFF" points="166.957,175.229 167.12,175.183 207.791,177.632 211.242,216.079 231.393,216.079 248.623,216.079 
-		242.109,144.133 167.129,136.437 166.957,136.485 	"/>
-	<polyline fill="#FFFFFF" points="244.784,175.343 241.593,136.454 162.99,136.454 162.99,160.606 162.99,175.246 162.99,175.343 
-		244.784,175.343 	"/>
-	<polygon fill="#FFFFFF" points="162.064,234.718 162.064,271.954 207.918,271.954 203.596,320.247 162.064,331.459 
-		162.064,370.201 238.404,349.043 238.963,342.752 247.715,244.717 248.623,234.718 238.588,234.718 	"/>
-	<path fill="#FFFFFF" d="M240,173.693"/>
-	<g>
-		<polygon fill="#151515" points="214.945,30.571 190.256,30.571 215.932,58.431 215.932,71.691 163.049,71.691 163.049,56.165 
-			188.719,56.165 163.049,28.306 163.049,15.025 214.945,15.025 214.945,30.571 		"/>
-		<path fill="#020202" d="M153.631,15.05v56.617h-45.543V52.953h26.613V15.05h18.928H153.631z"/>
-	</g>
-	<path fill="#FFFFFF" d="M239.51,173.693"/>
-</g>
-  </symbol>
-    </defs>
-</svg>
-  </div>
-
-
-  <!-- Scripts -->
-
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <script src="scripts/clipboard.min.js"></script>
-  <script src="scripts/index.js"></script>
-  
-  <footer class="main-footer">Copyright &copy; <span id="this-year">2017</span> Keisha S Perkins, all rights reserved.</footer>
-</body>
-
-
+    </div>
+    <footer class="main-footer">Copyright &copy; 2017 Keisha S Perkins, all rights reserved.</footer>
+    <div class="svg-defs">
+      <defs>
+        <symbol id="icon-twitter" viewBox="0 0 26 28">
+          <title>twitter</title>
+          <path d="M25.312 6.375c-0.688 1-1.547 1.891-2.531 2.609 0.016 0.219 0.016 0.438 0.016 0.656 0 6.672-5.078 14.359-14.359 14.359-
+            2.859 0-5.516-0.828-7.75-2.266 0.406 0.047 0.797 0.063 1.219 0.063 2.359 0 4.531-0.797 6.266-2.156-2.219-0.047-4.078-1.5-4.719-3.5 
+            0.313 0.047 0.625 0.078 0.953 0.078 0.453 0 0.906-0.063 1.328-0.172-2.312-0.469-4.047-2.5-4.047-4.953v-0.063c0.672 0.375 1.453 0.609 
+            2.281 0.641-1.359-0.906-2.25-2.453-2.25-4.203 0-0.938 0.25-1.797 0.688-2.547 2.484 3.062 6.219 5.063 10.406 5.281-0.078-0.375-0.125-
+            0.766-0.125-1.156 0-2.781 2.25-5.047 5.047-5.047 1.453 0 2.766 0.609 3.687 1.594 1.141-0.219 2.234-0.641 3.203-1.219-0.375 1.172-1.172 
+            2.156-2.219 2.781 1.016-0.109 2-0.391 2.906-0.781z"></path>
+        </symbol>
+        <symbol id="icon-github" viewBox="0 0 24 28">
+          <title>github</title>
+          <path d="M12 2c6.625 0 12 5.375 12 12 0 5.297-3.437 9.797-8.203 11.391-0.609 0.109-0.828-0.266-0.828-0.578 0-0.391 0.016-1.687 
+            0.016-3.297 0-1.125-0.375-1.844-0.812-2.219 2.672-0.297 5.484-1.313 5.484-5.922 0-1.313-0.469-2.375-1.234-3.219 0.125-0.313 0.531-
+            1.531-0.125-3.187-1-0.313-3.297 1.234-3.297 1.234-0.953-0.266-1.984-0.406-3-0.406s-2.047 0.141-3 0.406c0 0-2.297-1.547-3.297-1.234-
+            0.656 1.656-0.25 2.875-0.125 3.187-0.766 0.844-1.234 1.906-1.234 3.219 0 4.594 2.797 5.625 5.469 5.922-0.344 0.313-0.656 0.844-0.766 
+            1.609-0.688 0.313-2.438 0.844-3.484-1-0.656-1.141-1.844-1.234-1.844-1.234-1.172-0.016-0.078 0.734-0.078 0.734 0.781 0.359 1.328 1.75 
+            1.328 1.75 0.703 2.141 4.047 1.422 4.047 1.422 0 1 0.016 1.937 0.016 2.234 0 0.313-0.219 0.688-0.828 0.578-4.766-1.594-8.203-6.094-
+            8.203-11.391 0-6.625 5.375-12 12-12zM4.547 19.234c0.031-0.063-0.016-0.141-0.109-0.187-0.094-0.031-0.172-0.016-0.203 0.031-0.031 0.063 
+            0.016 0.141 0.109 0.187 0.078 0.047 0.172 0.031 0.203-0.031zM5.031 19.766c0.063-0.047 0.047-0.156-0.031-0.25-0.078-0.078-0.187-0.109-
+            0.25-0.047-0.063 0.047-0.047 0.156 0.031 0.25 0.078 0.078 0.187 0.109 0.25 0.047zM5.5 20.469c0.078-0.063 0.078-0.187 0-0.297-0.063-
+            0.109-0.187-0.156-0.266-0.094-0.078 0.047-0.078 0.172 0 0.281s0.203 0.156 0.266 0.109zM6.156 21.125c0.063-0.063 0.031-0.203-0.063-
+            0.297-0.109-0.109-0.25-0.125-0.313-0.047-0.078 0.063-0.047 0.203 0.063 0.297 0.109 0.109 0.25 0.125 0.313 0.047zM7.047 21.516c0.031-
+            0.094-0.063-0.203-0.203-0.25-0.125-0.031-0.266 0.016-0.297 0.109s0.063 0.203 0.203 0.234c0.125 0.047 0.266 0 0.297-0.094zM8.031 
+            21.594c0-0.109-0.125-0.187-0.266-0.172-0.141 0-0.25 0.078-0.25 0.172 0 0.109 0.109 0.187 0.266 0.172 0.141 0 0.25-0.078 0.25-
+            0.172zM8.937 21.438c-0.016-0.094-0.141-0.156-0.281-0.141-0.141 0.031-0.234 0.125-0.219 0.234 0.016 0.094 0.141 0.156 0.281 
+            0.125s0.234-0.125 0.219-0.219z"></path>
+        </symbol>
+        <symbol id="icon-mail" viewBox="0 0 32 32">
+          <title>mail</title>
+          <path d="M28 5h-24c-2.209 0-4 1.792-4 4v13c0 2.209 1.791 4 4 4h24c2.209 0 4-1.791 4-4v-13c0-2.208-1.791-4-4-4zM2 10.25l6.999 
+            5.25-6.999 5.25v-10.5zM30 22c0 1.104-0.898 2-2 2h-24c-1.103 0-2-0.896-2-2l7.832-5.875 4.368 3.277c0.533 0.398 1.166 0.6 1.8 0.6 0.633 
+            0 1.266-0.201 1.799-0.6l4.369-3.277 7.832 5.875zM30 20.75l-7-5.25 7-5.25v10.5zM17.199 18.602c-0.349 0.262-0.763 0.4-1.199 0.4s-0.851-
+            0.139-1.2-0.4l-12.8-9.602c0-1.103 0.897-2 2-2h24c1.102 0 2 0.897 2 2l-12.801 9.602z"></path>
+        </symbol>
+        <symbol id="icon-linkedin2" viewBox="0 0 32 32">
+          <title>linkedin2</title>
+          <path d="M12 12h5.535v2.837h0.079c0.77-1.381 2.655-2.837 5.464-2.837 5.842 0 6.922 3.637 6.922 8.367v9.633h-5.769v-8.54c0-2.037
+            -0.042-4.657-3.001-4.657-3.005 0-3.463 2.218-3.463 4.509v8.688h-5.767v-18z"></path>
+          <path d="M2 12h6v18h-6v-18z"></path>
+          <path d="M8 7c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
+        </symbol>
+      </defs>
+    </div>
+    <script src='https://cdn.jsdelivr.net/clipboard.js/1.6.0/clipboard.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script>
+      $('.alert.email-copy').hide();
+      new Clipboard(".copyable");
+      
+      var m = {
+      name: "ksp",
+      domain: "keishasperkins"
+      };
+      
+      
+      $(".email").click(function() {
+      $(".email").html(m.name + "@" + m.domain + ".com");
+      $(".email").addClass("copyable");
+      $(".email").attr("data-clipboard-text", "ksp@keishasperkins.com");
+      $(".alert.email-copy").fadeIn(1000).delay(2000).fadeOut(1000);
+      console.log('clicked');
+      });
+    </script>
+  </body>
 </html>
