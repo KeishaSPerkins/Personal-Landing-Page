@@ -10,6 +10,21 @@ a
   &:hover
     color: $hotpink
     text-decoration: none
+a.btn
+  background: $hotpink
+  color: white
+  border: none
+  border-radius: 0
+  margin: 20px auto
+  &:focus
+    color: lightgray
+    border: .5px solid darken($hotpink, 10%)
+    outline: 0
+  &:visited
+    color: lightgray
+  &:hover
+    background: darken($hotpink, 10%)
+    color: white    
 .reverse
   direction: rtl  
   unicode-bidi: bidi-override
