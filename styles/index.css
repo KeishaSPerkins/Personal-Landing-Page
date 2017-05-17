@@ -12,6 +12,29 @@ a:hover {
   text-decoration: none;
 }
 
+a.btn {
+  background: #f10e78;
+  color: white;
+  border: none;
+  border-radius: 0;
+  margin: 20px auto;
+}
+
+a.btn:focus {
+  color: lightgray;
+  border: 0.5px solid #c10b60;
+  outline: 0;
+}
+
+a.btn:visited {
+  color: lightgray;
+}
+
+a.btn:hover {
+  background: #c10b60;
+  color: white;
+}
+
 .reverse {
   direction: rtl;
   unicode-bidi: bidi-override;
