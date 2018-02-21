@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://la-wit.github.io/build-an-infinite-runner/build/js/lib/p5.js"></script>
+    <script src="https://la-wit.github.io/build-an-infinite-runner/build/js/lib/p5.play.js"></script>
+    <script src="https://la-wit.github.io/build-an-infinite-runner/build/js/lib/p5.sound.js"></script>
+    <title>Paint Toy</title>
+    <style>
+      body {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: column no-wrap;
+      flex-flow: column no-wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      background: #888;
+      background: url("https://www.toptal.com/designers/subtlepatterns/patterns/swirl_pattern.png");
+      }
+      .main-wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.4);
+      padding: 10px 5px;
+      border-radius: 5px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      }
+      .main-wrapper .button-wrapper, .main-wrapper .other-controls {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+      flex-flow: column;
+      }
+      .main-wrapper button {
+      outline: none;
+      min-width: 100px;
+      background: white;
+      text-align: center;
+      margin: 0;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin: 2px 5px;
+      min-height: 33.7px;
+      }
+      .main-wrapper button#BLUE {
+      background: #0066ff;
+      }
+      .main-wrapper button#RED {
+      background: #990000;
+      }
+      .main-wrapper button#YELLOW {
+      background: yellow;
+      }
+      .main-wrapper button#PURPLE {
+      background: purple;
+      }
+      .main-wrapper button#ORANGE {
+      background: orange;
+      }
+      .main-wrapper button#GREEN {
+      background: green;
+      }
+      .main-wrapper button#LIGHTBLUE {
+      background: lightblue;
+      }
+      .main-wrapper button#PINK {
+      background: pink;
+      }
+      .main-wrapper button#BROWN {
+      background: SaddleBrown;
+      }
+      .main-wrapper button#LIME {
+      background: lime;
+      }
+      .main-wrapper button#LAVENDER {
+      background: #AF8FC8;
+      }
+      .main-wrapper button#BLACK {
+      background: black;
+      color: white;
+      }
+      .main-wrapper button#GRAY {
+      background: gray;
+      }
+      .main-wrapper button#ERASER {
+      background: #ddd;
+      border-bottom: none;
+      }
+      .main-wrapper button#CLEARALL {
+      background: #eee;
+      }
+      .main-wrapper button#HOTPINK {
+      background: #ff3399;
+      }
+      .main-wrapper canvas {
+      margin: 0;
+      border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="instructions">
+      <p>Select a color, click and drag to draw.</p>
+    </div>
+    <div id="main-wrapper" class="main-wrapper">
+      <div class="button-wrapper">
+        <button id="BLUE">Blue</button>
+        <button id="RED">Red</button>
+        <button id="YELLOW">Yellow</button>
+        <button id="PURPLE">Purple</button>
+        <button id="ORANGE">Orange</button>
+        <button id="GREEN">Green</button>
+        <button id="LIGHTBLUE">Light Blue</button>
+        <button id="PINK">Pink</button>
+        <button id="BROWN">Brown</button>
+        <button id="LIME">Lime</button>
+        <button id="LAVENDER">Lavender</button>
+        <button id="BLACK">Black</button>
+        <button id="HOTPINK">Hot Pink</button>
+        <button id="GRAY">Gray</button> 
+        <button id="ERASER">Eraser</button>
+        <button id="CLEARALL">Clear All</button>
+      </div>
+      <div id='canvas-holder' class="canvas-holder"></div>
+      <!--   <div class="other-controls">
+        <button id="CIRCLE">Ellipse</button> 
+        <button id="RECTANGLE">Rectangle</button>
+        <button id="TRIANGLE">Triangle</button>
+        <button id="BUCKET">Fill</button>
+        <div class="sliders" id="sliders"></div>
+        </div> -->
+    </div>
+    <script>
+      // The Sketch
+      var col = 'white';
+      var brushHeight;
+      var brushWidth;
+      function setup() {
+      var canvas = createCanvas(800, 600);
+      canvas.parent('canvas-holder');
+      background(255);
+      frameRate(60);
+      // brushHeight = createSlider(5,50);
+      // brushWidth = createSlider(5,50);
+      // brushHeight.parent('sliders');
+      // brushWidth.parent('sliders');
+      }
+      
+      function draw() {
+      if (mouseIsPressed) {
+        coloring();
+      }
+      
+      }
+      
+      function coloring() {
+      document.getElementById('BLUE').addEventListener('click', function() {
+        col = '#0066ff';
+      });
+      document.getElementById('RED').addEventListener('click', function() {
+        col = '#990000';
+      });
+      document.getElementById('YELLOW').addEventListener('click', function() {
+        col = 'Yellow';
+      });
+      document.getElementById('PURPLE').addEventListener('click', function() {
+        col = 'Purple';
+      });
+      document.getElementById('ORANGE').addEventListener('click', function() {
+        col = 'Orange';
+      });
+      document.getElementById('GREEN').addEventListener('click', function() {
+        col = 'Green';
+      });
+      document.getElementById('LIGHTBLUE').addEventListener('click', function() {
+        col = 'LightBlue';
+      });
+      document.getElementById('PINK').addEventListener('click', function() {
+        col = 'Pink';
+      });
+      document.getElementById('BROWN').addEventListener('click', function() {
+        col = 'SaddleBrown';
+      });
+      document.getElementById('LIME').addEventListener('click', function() {
+        col = 'Lime';
+      });
+      document.getElementById('LAVENDER').addEventListener('click', function() {
+        col = '#AF8FC8';
+      });
+      document.getElementById('BLACK').addEventListener('click', function() {
+        col = 'Black';
+      });
+      document.getElementById('GRAY').addEventListener('click', function() {
+        col = 'Gray';
+      });
+      document.getElementById('HOTPINK').addEventListener('click', function() {
+        col = '#ff3399';
+      });
+      document.getElementById('ERASER').addEventListener('click', function() {
+        col = 'White';
+      });
+      document.getElementById('CLEARALL').addEventListener('click', function() {
+        background('white');
+      });
+      fill(col);
+      noStroke();
+      ellipse(mouseX, mouseY, 30, 30);
+      
+      }
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://la-wit.github.io/build-an-infinite-runner/build/js/lib/p5.js"></script>
+	<script src="https://la-wit.github.io/build-an-infinite-runner/build/js/lib/p5.play.js"></script>
+	<script src="https://la-wit.github.io/build-an-infinite-runner/build/js/lib/p5.sound.js"></script>
+
+	<title>Move the Circle</title>
+	<style>
+		canvas{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+
+		}
+	</style>
+</head>
+<body>
+	<script>
+		var x = 100;
+		var y = 100;
+
+		function setup() {
+			createCanvas(800, 300);
+			
+			
+
+		}
+
+		function draw() {
+			  if (keyIsDown(LEFT_ARROW)) {
+			    x -= 5;
+			  }
+
+			  if (keyIsDown(RIGHT_ARROW)) {
+			    x += 5;
+			  }
+
+			  if (keyIsDown(UP_ARROW)) {
+			    y -= 5;
+			  }
+
+			  if (keyIsDown(DOWN_ARROW)) {
+			    y += 5;
+			  }
+			  background('black');
+				ellipse(x, y, 50, 50);
+		}
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

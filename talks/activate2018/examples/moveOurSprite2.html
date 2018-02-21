@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://la-wit.github.io/build-an-infinite-runner/build/js/lib/p5.js"></script>
+	<script src="https://la-wit.github.io/build-an-infinite-runner/build/js/lib/p5.play.js"></script>
+	<script src="https://la-wit.github.io/build-an-infinite-runner/build/js/lib/p5.sound.js"></script>
+
+	<title>Key Press Move 2</title>
+	<style>
+		canvas{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+
+		}
+	</style>
+</head>
+<body>
+	<script>
+		var robot;
+
+		function setup() {
+			robot = createSprite(150,150,50,160);
+			robot.addAnimation("idle", "images/idle01.png", "images/idle09.png");
+			robot.addAnimation("run", "images/run01.png", "images/run08.png");
+			createCanvas(800, 300);
+			
+
+		}
+
+		function draw() {
+			background('black');
+			if (keyIsDown(39)) {
+			    robot.velocity.x = 1;
+			    robot.changeAnimation('run');
+			    robot.mirrorX(1);
+			  } else if (keyIsDown(37)) {
+			    robot.velocity.x = -1;
+			    robot.changeAnimation('run');
+			    robot.mirrorX(-1);
+			  } else{
+			  	robot.velocity.x = 0;
+			  	robot.changeAnimation('idle');
+			  }
+			drawSprites();
+		}
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

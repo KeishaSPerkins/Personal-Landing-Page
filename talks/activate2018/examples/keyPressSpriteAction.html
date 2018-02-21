@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://la-wit.github.io/build-an-infinite-runner/build/js/lib/p5.js"></script>
+	<script src="https://la-wit.github.io/build-an-infinite-runner/build/js/lib/p5.play.js"></script>
+	<script src="https://la-wit.github.io/build-an-infinite-runner/build/js/lib/p5.sound.js"></script>
+
+	<title>Key Press Jump</title>
+	<style>
+		canvas{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+
+		}
+	</style>
+</head>
+<body>
+	<script>
+		var robot;
+
+		function setup() {
+			robot = createSprite(150,150,50,160);
+			robot.addAnimation("idle", "images/idle01.png", "images/idle09.png");
+			robot.addAnimation("jump", "images/jump01.png", "images/jump10.png");
+			createCanvas(800, 300);
+			
+
+		}
+
+		function draw() {
+			background('black');
+			
+			if(keyIsDown(32)){
+				robot.changeAnimation("jump");
+			} else if(!keyIsDown(32)) {
+				robot.changeAnimation("idle");
+			}
+			drawSprites();
+
+		}
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
