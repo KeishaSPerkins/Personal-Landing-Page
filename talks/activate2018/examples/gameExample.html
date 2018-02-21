@@ -36,7 +36,7 @@ var runnerSpeed = 15;
 var currentBackgroundTilePosition;
 var backgroundTiles;
 var playerScore = 0;
-var jumpSound;
+
 
 function preload() {
   jumpingAnimation = loadAnimation(
@@ -68,12 +68,6 @@ platformBackground = loadImage('https://la-wit.github.io/build-an-infinite-runne
   );
   gameMusic = loadSound(
     "https://la-wit.github.io/build-an-infinite-runner/build/sounds/generic-game-loop-4.mp3"
-  );
-  gameOverSound = loadSound(
-    "https://la-wit.github.io/build-an-infinite-runner/build/sounds/over.mp3"
-  );
-  jumpSound = loadSound(
-    "https://la-wit.github.io/build-an-infinite-runner/build/sounds/jump07.mp3"
   );
 }
 
@@ -137,7 +131,6 @@ function addNewPlatforms() {
 function solidGround() {
   runner.velocity.y = 0;
   runner.changeAnimation("run");
-  jumpSound.stop();
   if (runner.touching.right) {
     runner.velocity.x = 0;
     runner.velocity.y += 30;
@@ -146,7 +139,7 @@ function solidGround() {
 
 function jumpDetection() {
   if (keyWentDown(UP_ARROW)) {
-    jumpSound.play();
+
     runner.changeAnimation("jump");
     runner.animation.rewind();
     runner.velocity.y = -jumpPower;
@@ -154,7 +147,6 @@ function jumpDetection() {
 }
 
 function touchStarted() {
-  jumpSound.play();
   runner.changeAnimation("jump");
   runner.animation.rewind();
   runner.velocity.y = -jumpPower;
@@ -170,7 +162,6 @@ function touchStarted() {
     currentPlatformLocation = -width;
     currentBackgroundTilePosition = -width;
     playerScore = 0;
-    gameOverSound.stop();
     gameMusic.play();
   }
 }
@@ -210,7 +201,6 @@ function fallCheck() {
   if (runner.position.y > height) {
     gameOver = true;
     gameMusic.stop();
-    gameOverSound.play();
   }
 }
 
@@ -249,7 +239,6 @@ function newGame() {
     currentPlatformLocation = -width;
     currentBackgroundTilePosition = -width;
     playerScore = 0;
-    gameOverSound.stop();
     gameMusic.play();
   }
 }
